@@ -143,8 +143,8 @@ function App() {
       
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 flex justify-between items-center">
-        <div className="text-lg md:text-2xl font-bold tracking-wider cursor-pointer z-50">
-          YOUR NAME
+        <div className="text-2xl md:text-3xl font-bold italic font-[cursive] tracking-wider cursor-pointer z-50" style={{fontFamily: 'Pacifico, Dancing Script, cursive'}}>
+          HARMO
         </div>
         <div className="md:hidden"><HamburgerIcon isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} /></div>
         <div className="hidden md:block"><HamburgerIcon isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} /></div>
