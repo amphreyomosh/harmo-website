@@ -151,11 +151,11 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <main id="home" className="relative h-screen flex flex-col items-end justify-end text-right p-10 md:p-20 overflow-hidden">
+      <main id="home" className="relative h-[70vh] md:h-screen flex flex-col items-end justify-end text-right p-4 sm:p-6 md:p-10 lg:p-20 overflow-hidden">
         <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover z-0" src="https://videos.pexels.com/video-files/3129576/3129576-hd_1920_1080_25fps.mp4"></video>
-        <div className="relative z-10 bg-black bg-opacity-50 p-10 rounded-lg">
-            <h1 className="text-6xl md:text-8xl font-extrabold leading-tight mb-4">Crafting Digital Experiences</h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl ml-auto">A passionate developer creating seamless and beautiful web applications. Inspired by precision engineering and timeless design.</p>
+        <div className="relative z-10 bg-black bg-opacity-60 p-4 sm:p-6 md:p-10 rounded-lg max-w-full md:max-w-2xl">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-2 sm:mb-4">Crafting Digital Experiences</h1>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-full md:max-w-2xl ml-auto">A passionate developer creating seamless and beautiful web applications. Inspired by precision engineering and timeless design.</p>
         </div>
       </main>
 

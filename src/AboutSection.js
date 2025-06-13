@@ -34,33 +34,38 @@ const AboutSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section id="about" className="min-h-screen bg-gray-900 p-10 flex items-center justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+    <section id="about" className="min-h-screen bg-gray-900 p-4 sm:p-6 md:p-10 flex items-center justify-center">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center max-w-7xl mx-auto w-full">
         {/* Left Column: Text */}
         <motion.div 
           initial={{ opacity: 0, x: -50 }} 
           animate={{ opacity: 1, x: 0 }} 
           transition={{ duration: 0.8 }}
-          className="text-left"
+          className="text-left w-full md:w-1/2"
         >
-          <h2 className="text-6xl font-bold mb-6">About Me</h2>
-          <p className="text-xl text-gray-400">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">About Me</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-400">
             I am a full-stack developer with a passion for creating beautiful, functional, and user-centric digital experiences. I believe that great design is not just about aesthetics, but about creating intuitive and meaningful interactions. My expertise spans the full development lifecycle, from concept to deployment.
           </p>
-          <p className="text-xl text-gray-400 mt-4">
+          <p className="text-base sm:text-lg md:text-xl text-gray-400 mt-2 sm:mt-4">
             Click on the cards to the right to explore some of my core skills. Each card represents a key area of my technical proficiency, showcasing my ability to deliver robust and elegant solutions.
           </p>
         </motion.div>
 
         {/* Right Column: Carousel */}
-        <div className="w-full">
+        <div className="w-full md:w-1/2">
           <Swiper
             onSwiper={setSwiper}
             effect={'coverflow'}
             grabCursor={true}
             centeredSlides={true}
             loop={true}
-            slidesPerView={3}
+            slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 }
+            }}
             onSlideChange={(s) => setActiveIndex(s.realIndex)}
             coverflowEffect={{
               rotate: 0,
@@ -70,22 +75,22 @@ const AboutSection = () => {
               slideShadows: false,
             }}
             modules={[EffectCoverflow]}
-            className="w-full h-[400px]"
+            className="w-full h-[260px] sm:h-[320px] md:h-[400px]"
           >
             {skills.map((skill, index) => (
               <SwiperSlide 
                 key={index} 
-                className="w-[350px] h-[400px]"
+                className="w-[200px] sm:w-[280px] md:w-[350px] h-[220px] sm:h-[280px] md:h-[400px]"
                 onClick={() => swiper && swiper.slideToLoop(index)}
               >
                 <motion.div 
                   className="w-full h-full relative"
-                  animate={{ scale: activeIndex === index ? 1.2 : 0.9 }}
+                  animate={{ scale: activeIndex === index ? 1.1 : 0.9 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                 >
                   <img src={skill.image} alt={skill.name} className="w-full h-full object-cover rounded-lg" />
-                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-start p-4 rounded-lg">
-                    <h3 className="text-white text-xl font-bold">{skill.name}</h3>
+                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-start p-2 sm:p-4 rounded-lg">
+                    <h3 className="text-white text-base sm:text-lg md:text-xl font-bold">{skill.name}</h3>
                   </div>
                 </motion.div>
               </SwiperSlide>
