@@ -151,7 +151,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <main id="home" className="relative h-[70vh] md:h-screen flex flex-col items-end justify-end text-right p-4 sm:p-6 md:p-10 lg:p-20 overflow-hidden">
+      <main id="home" className="relative h-[100dvh] md:h-screen flex flex-col items-end justify-end text-right p-4 sm:p-6 md:p-10 lg:p-20 overflow-hidden">
         <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover z-0" src="https://videos.pexels.com/video-files/3129576/3129576-hd_1920_1080_25fps.mp4"></video>
         <div className="relative z-10 bg-black bg-opacity-60 p-4 sm:p-6 md:p-10 rounded-lg max-w-full md:max-w-2xl">
             <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-2 sm:mb-4">Crafting Digital Experiences</h1>
