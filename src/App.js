@@ -74,14 +74,14 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div 
-          className="fixed top-0 left-0 h-full w-3/4 bg-black bg-opacity-50 backdrop-blur-lg z-40 flex items-center justify-center"
+          className="fixed top-0 left-0 h-full w-11/12 md:w-2/3 lg:w-1/3 bg-black bg-opacity-60 backdrop-blur-lg z-40 flex items-center justify-center"
           initial="closed" animate="open" exit="closed" variants={menuVariants} transition={{ type: "spring", stiffness: 260, damping: 30 }}
         >
           <nav>
             <motion.ul initial="closed" animate="open" variants={{ open: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } } }}>
               {navLinks.map(link => (
-                <motion.li key={link} variants={linkVariants} className="my-6">
-                  <a href={`#${link.toLowerCase()}`} onClick={() => setIsOpen(false)} className="text-8xl font-bold text-white hover:text-gray-400 transition-colors">
+                <motion.li key={link} variants={linkVariants} className="my-4 md:my-6">
+                  <a href={`#${link.toLowerCase()}`} onClick={() => setIsOpen(false)} className="text-4xl md:text-6xl lg:text-8xl font-bold text-white hover:text-gray-400 transition-colors">
                     {link}
                   </a>
                 </motion.li>
@@ -142,11 +142,12 @@ function App() {
       <SideMenu isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
       
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 p-6 flex justify-between items-center">
-        <div className="text-2xl font-bold tracking-wider cursor-pointer z-50">
+      <header className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 flex justify-between items-center">
+        <div className="text-lg md:text-2xl font-bold tracking-wider cursor-pointer z-50">
           YOUR NAME
         </div>
-        <HamburgerIcon isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+        <div className="md:hidden"><HamburgerIcon isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} /></div>
+        <div className="hidden md:block"><HamburgerIcon isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} /></div>
       </header>
 
       {/* Hero Section */}

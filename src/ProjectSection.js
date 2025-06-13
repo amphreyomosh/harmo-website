@@ -76,9 +76,9 @@ export default function ProjectSection() {
 
   return (
     <div className="w-full min-h-screen bg-black flex flex-col items-center py-12">
-      <h2 className="text-6xl font-extrabold text-gray-100 w-full text-right lg:mr-[250px] lg:mb-[100px] mb-10">Projects</h2>
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-100 w-full text-right mb-6 md:mb-10 lg:mb-[100px] mr-4 md:mr-20 lg:mr-[250px]">Projects</h2>
       <div
-        className="grid grid-cols-3 grid-rows-3 w-full max-w-6xl h-[900px] overflow-hidden"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-9 md:grid-rows-5 lg:grid-rows-3 w-full max-w-full md:max-w-4xl lg:max-w-6xl h-auto md:h-[1200px] lg:h-[900px] overflow-hidden"
         style={{ gap: 0 }}
       >
         {projects.map((project) => {
