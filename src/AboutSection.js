@@ -9,11 +9,11 @@ import 'swiper/css/effect-coverflow';
 const skills = [
   {
     name: 'Web Design',
-    image: 'https://images.unsplash.com/photo-1581090700227-4c4a0f3b22b9?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2ViJTIwZGVzaWdufGVufDB8fDB8fHww',
   },
   {
     name: 'Frontend Development',
-    image: 'https://images.unsplash.com/photo-1581276879432-15a57c2b5d9c?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJvbnQlMjBlbmR8ZW58MHx8MHx8fDA%3D',
   },
   {
     name: 'Responsive Design',
