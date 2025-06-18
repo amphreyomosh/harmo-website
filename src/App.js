@@ -176,7 +176,7 @@ function App() {
           <div className="relative z-10">
             <h2 className="text-5xl font-bold mb-8">Get In Touch</h2>
             <p className="text-xl text-gray-400 mb-8">I'm currently available for freelance work. Drop me a line!</p>
-            <a href="mailto:your.email@example.com" className="bg-white text-black font-bold py-3 px-8 rounded-lg hover:bg-gray-300 transition-colors">Email Me</a>
+            <a href="mailto:your.amphreyomosh2001@gmail.com" className="bg-white text-black font-bold py-3 px-8 rounded-lg hover:bg-gray-300 transition-colors">Email Me</a>
           </div>
         </section>
       </AnimatedWrapper>
