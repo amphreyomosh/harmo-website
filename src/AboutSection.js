@@ -8,26 +8,47 @@ import 'swiper/css/effect-coverflow';
 
 const skills = [
   {
-    name: 'UI/UX Design',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop',
+    name: 'Web Design',
+    image: 'https://images.unsplash.com/photo-1581090700227-4c4a0f3b22b9?q=80&w=2070&auto=format&fit=crop',
   },
   {
     name: 'Frontend Development',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1581276879432-15a57c2b5d9c?q=80&w=2070&auto=format&fit=crop',
   },
   {
-    name: 'Backend Engineering',
-    image: 'https://images.unsplash.com/photo-1592609931095-54a2168ae893?q=80&w=2070&auto=format&fit=crop',
+    name: 'Responsive Design',
+    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=2070&auto=format&fit=crop',
   },
   {
-    name: 'Data Visualization',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
+    name: 'Content Creation',
+    image: 'https://images.unsplash.com/photo-1581092334653-379d9de0f7e7?q=80&w=2070&auto=format&fit=crop',
   },
   {
-    name: 'Cloud & DevOps',
-    image: 'https://images.unsplash.com/photo-1544256718-3bcf237f3974?q=80&w=2071&auto=format&fit=crop',
+    name: 'Teaching & Tutorials',
+    image: 'https://images.unsplash.com/photo-1603576981372-7f6a08688da4?q=80&w=2070&auto=format&fit=crop',
+  },
+  {
+    name: 'HTML & CSS',
+    image: 'https://images.unsplash.com/photo-1580894908361-967195033a47?q=80&w=2070&auto=format&fit=crop',
+  },
+  {
+    name: 'JavaScript',
+    image: 'https://images.unsplash.com/photo-1629904853893-c2d6f6263ae1?q=80&w=2070&auto=format&fit=crop',
+  },
+  {
+    name: 'Website Performance',
+    image: 'https://images.unsplash.com/photo-1591696205602-2f950c417cb9?q=80&w=2070&auto=format&fit=crop',
+  },
+  {
+    name: 'SEO Basics',
+    image: 'https://images.unsplash.com/photo-1610484826967-7073b623b0d7?q=80&w=2070&auto=format&fit=crop',
+  },
+  {
+    name: 'Version Control (Git)',
+    image: 'https://images.unsplash.com/photo-1621784564114-6c112bc25f83?q=80&w=2070&auto=format&fit=crop',
   },
 ];
+
 
 const AboutSection = () => {
   const [swiper, setSwiper] = useState(null);
