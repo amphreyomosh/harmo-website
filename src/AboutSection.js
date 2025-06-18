@@ -45,10 +45,11 @@ const AboutSection = () => {
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">About Me</h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-400">
-            I am a full-stack developer with a passion for creating beautiful, functional, and user-centric digital experiences. I believe that great design is not just about aesthetics, but about creating intuitive and meaningful interactions. My expertise spans the full development lifecycle, from concept to deployment.
-          </p>
+          I’m a passionate web developer focused on creating beautiful, responsive, and user-friendly websites. Beyond building websites, I love sharing what I know to help others learn and grow in tech.          </p>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 mt-2 sm:mt-4">
-            Click on the cards to the right to explore some of my core skills. Each card represents a key area of my technical proficiency, showcasing my ability to deliver robust and elegant solutions.
+          I actively contribute to the community by teaching web development and design through workshops and tutorials. I also run a YouTube channel where I create easy-to-follow content to guide beginners and aspiring developers step by step.          </p>
+          <p className="text-base sm:text-lg md:text-xl text-gray-400 mt-2 sm:mt-4">
+            Click on the cards to the right to explore some of my core skills. Each card represents a key area of my technical proficiency, showcasing my ability to deliver  solutions.
           </p>
         </motion.div>
 
